@@ -1,0 +1,45 @@
+{
+  "name": "diet-app-api",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "app.js",
+  "type": "commonjs",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "vitest",
+    "start": "fastify start -l info app.js",
+    "dev": "tsx watch src/server.ts",
+    "knex": "ts-node -r tsconfig-paths/register node_modules/.bin/knex"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^5.0.0",
+    "@fastify/cookie": "^9.3.1",
+    "@fastify/sensible": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.26.1",
+    "fastify-cli": "^6.1.1",
+    "fastify-plugin": "^4.0.0",
+    "knex": "^3.1.0",
+    "knex-migrate": "^1.7.4",
+    "sqlite3": "^5.1.7",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@babel/register": "^7.24.6",
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@types/node": "^20.12.12",
+    "@types/supertest": "^6.0.2",
+    "eslint": "^8.57.0",
+    "sucrase": "^3.35.0",
+    "supertest": "^7.0.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.11.0",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}
