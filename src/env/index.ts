@@ -6,7 +6,7 @@ const envSchema = z.object({
     .enum(['development', 'test', 'production'])
     .default('development'),
   DATABASE_URL: z.string(),
-  PORT: z.number().default(3333),
+  PORT: z.coerce.string().default('3333'),
   DATABASE_CLIENT: z.enum(['pg', 'sqlite3']),
 })
 
